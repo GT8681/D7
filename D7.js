@@ -5,7 +5,7 @@
   prima e gli ultimi 3 della seconda. Converti la stringa risultante in maiuscolo e mostrala con un console.log().
 */
 
-//const str = function(str1,str2){
+//const str = function(str1,str2)
 
 
 
@@ -181,10 +181,17 @@ const movies = [
 /* ESERCIZIO 9 (forEach)
   Scrivi una funzione per trovare il film più vecchio nell'array fornito.
 */
+/*
+    movies.forEach(function());
+   +/ 
 
 /* ESERCIZIO 10
   Scrivi una funzione per ottenere il numero di film contenuti nell'array fornito.
 */
+ /* const numerTot = movies.forEach(function(number));
+  console.log(numerTot);
+  */
+
 
 
 /* ESERCIZIO 11 (map)
@@ -213,6 +220,7 @@ console.log(films);
  
 const imdbID = "Title";
 const ricercaFilm = movies.find(fil =>Title(imdbID));
+console.log(ricercaFilm);
 
 /* ESERCIZIO 15 (findIndex)
   Scrivi una funzione per ottenere dall'array fornito l'indice del primo film uscito nell'anno fornito come parametro.
