@@ -6,7 +6,7 @@
 */
 
 const str = (str1,str2) => {
-  return str1.slice(0,2),concat(str2.slice(str2.length-3))
+  return str1.slice(0,2).concat(str2.slice(str2.length-3))
 }
 
 console.log(str('paperino','paperina'));
@@ -15,7 +15,7 @@ console.log(str('paperino','paperina'));
 /* ESERCIZIO 2 (for)
   Scrivi una funzione che torni un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 100 (incluso).
 */
-const rabdom10 = () =>{
+const random10 = () =>{
      const array = []
      for(let index =0; index<10;index++){
        array.push(Math.floor(Math.random()*101))
@@ -39,7 +39,7 @@ console.log(soloPari([1,4,5,7,8,9,9,74,43,65,2,33,]));
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
 const sommaNumeri =(array) =>{
-     let = 0
+     let somma = 0
      array.forEach(element => {
      somma += element 
      });
@@ -57,7 +57,7 @@ console.log(sommaNumeri([5,76,82,36,44,5,47,65,7,83]));
   Scrivi una funzione che, dato un array di soli numeri e un numero n come parametri, ritorni un secondo array con tutti i valori del precedente incrementati di n
 */
 
-const incArray = (array) =>{
+const incArray = (array,n) =>{
   return array.map((el) => el+n)
 
 }
@@ -71,7 +71,7 @@ console.log(incArray([1,2,3,4,5,6,7,8,9,10],10));
 */
 
 const  lungh = (array) =>{
-   return Array.map((elem) => elem.length)
+   return array.map((elem) => elem.length)
 
 }
 console.log(lungh(['EPICODE','is','great']));
